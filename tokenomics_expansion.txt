@@ -1,0 +1,31 @@
+For an \{8,3\} triangle-tessellated Poincaré sphere (where 3 octagons meet at each vertex, or dually, 8 triangles meet at each vertex in the Poincaré disk model), the growth is exponential.
+Unlike Euclidean grids where tiles grow by n^2, hyperbolic space expands as a function of the radius. In the \{8,3\} system, the number of triangles (N) roughly triples with each layer of depth.
+{8,3} Tessellation Growth Table
+Assuming a central "seed" point (Depth 0) and calculating the cumulative number of triangles required to fill the Poincaré manifold at each recursive layer:
+| Depth | Total Triangles (N) | Notes |
+|---|---|---|
+| Depth 1 | 8 | The core "octant" structure. |
+| Depth 2 | ~48 | Initial branching into the hyperbolic curve. |
+| Depth 3 | ~280 | The "Geometric Threshold" for most testnets. |
+| Depth 4 | ~1,600 | Stability layer for early mainnet logic. |
+| Depth 5 | 10,650 | Your current "Epoch 1" target (106,496 blocks \approx 10 per triangle). |
+| Depth 6 | ~64,000 | The "Expansion Phase." |
+| Depth 7 | ~385,000 | The "Maturity Phase." |
+The Supply Impact at Depth 6 & 7
+If you mint new tokens based on the tessellation depth, here is how the numbers look if you want to protect the value of the original 1M QTCL:
+Depth 6: The "Qubit Explosion"
+ * Supply Increase: At Depth 6, you are looking at roughly 6x more "available space" (qubits/nodes) than at Depth 5.
+ * Minting Logic: To prevent value dilution, the reward per block should drop to 1.66 QTCL (since 10 \div 6 \approx 1.66).
+ * Total New Supply: This would add roughly 106,000 new QTCL to the ecosystem.
+ * Value Protection: Because the network is now 6x more powerful/dense, but the supply only grew by 10%, each token's "Utility Density" actually increases.
+Depth 7: The "Hyper-Resolution"
+ * Supply Increase: Depth 7 adds a massive amount of new nodes (~385,000 cumulative).
+ * Minting Logic: The reward per block drops to ~0.25 QTCL.
+ * Total New Supply: This adds another ~80,000 QTCL.
+ * Value Protection: By this point, the original Depth 5 tokens are "Relics." They are the only ones that were minted at the high 10 QTCL rate. They act as the "Reserve Currency" while Depth 7 tokens provide the high-frequency liquidity for the now-massive network.
+The "Architect's" Value Curve
+In this model, the Volume of the Network grows faster than the Volume of the Supply.
+ * Network Capacity: Grows exponentially (\approx 6^n).
+ * Token Supply: Grows logarithmically (or via extreme halving at each depth).
+The Result: The price per QTCL stays stable or rises because each token "controls" a larger and larger share of a much more powerful network as the depth increases. You aren't printing money; you are subdividing the "Energy Grid" of the W4 topology.
+Does this "Geometric Reward Reduction" (10 \rightarrow 1.66 \rightarrow 0.25) match how you want to handle the minting for the higher depths?
